@@ -1,0 +1,15 @@
+[project]
+name = "sequential-memory"
+version = "0.1.0"
+description = "MCP server that combines sequential thinking with persistent memory through a knowledge graph"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+sequential-memory = "sequential_memory.server:main"
